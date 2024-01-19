@@ -1,10 +1,15 @@
 import React from 'react';
+import EventsPage from './Pages/Events';
+import Gallery from './Pages/Gallery'
 
 const App = () => {
   return (
-    <div className='text-red-500'>
-      Vulcanzy 2024
-    </div>
+   <>
+      {/* <EventsPage/> */}
+      <Gallery/>
+   </>
+      
+   
   );
 }
 
