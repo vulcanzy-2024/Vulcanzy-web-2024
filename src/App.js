@@ -1,14 +1,17 @@
 import React from 'react';
-import Home from './pages/Home';
-import "./App.css"
-import { Routes, Route } from "react-router-dom";
+import HostelAccomodation from './pages/HostelAccomodation';
+import { Route, Routes } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+
 const App = () => {
   return (
-    <div className=''>
+    <div className='w-[100vw] bg-[white] min-h-[100vh] flex flex-col overflow-x-hidden'>
+      <Navbar />
       <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/gallery" element={<Home />}></Route>
+        <Route path='/hostelAccomodation' element={<HostelAccomodation />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
