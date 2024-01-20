@@ -5,6 +5,8 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import './App.css';
+import EventsPage from './pages/Events';
+import Gallery from './pages/Gallery';
 
 const App = () => {
   return (
@@ -13,6 +15,8 @@ const App = () => {
       <Routes>
         <Route path='/hostelAccomodation' element={<HostelAccomodation />} />
         <Route path='/' element={<Home/>}/>
+        <Route path='/events' element={<EventsPage/>}/>
+        <Route path='/gallery' element={<Gallery/>} />
       </Routes>
       <Footer />
     </div>

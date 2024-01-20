@@ -12,7 +12,7 @@ const Carousel = ({ children: slides, autoSlide = false, autoSlideInterval = 300
         if (!autoSlide) return
         const slideInterval = setInterval(next, autoSlideInterval)
         return () => clearInterval(slideInterval)
-    }, [])
+    })
 
 
     return (
