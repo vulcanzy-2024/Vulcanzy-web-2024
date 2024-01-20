@@ -1,16 +1,16 @@
-import logo from "../images/home/VULCANZY_BLACK.png";
+import logo from "../assets/images/home/VULCANZY_BLACK.png";
 import React from "react";
-import bgvideo from "../images/video/Vulcanzy.mp4";
-import des1 from "../images/home/sunwaves.svg";
-import clock from "../images/home/Clock.svg";
+import bgvideo from "../assets/video/Vulcanzy.mp4";
+import des1 from "../assets/images/home/sunwaves.svg";
+import clock from "../assets/images/home/Clock.svg";
 import Timer from "../components/Timer";
-import Nit_Logo from "../images/home/NITAP_LOGO.png";
-const wave = require("../images/wave.png");
+// import Nit_Logo from "../images/home/NITAP_LOGO.png";
+import wave from "../assets/images/wave.png"
 const Home = () => {
   return (
     <>
-      <div className=" bg-[#808080]/50 flex justify-around items-center h-[100dvh] w-[100%] overflow-clip relative">
-        <div className="absolute top-4 left-10 flex text-white gap-5 justify-center items-center">
+      <div className=" flex justify-around items-center -z-20 h-[100dvh] w-[100%] overflow-clip relative">
+        {/* <div className="absolute top-4 left-10 flex text-white gap-5 justify-center items-center">
           <img
             src={Nit_Logo}
             alt=""
@@ -19,8 +19,11 @@ const Home = () => {
           <p className="text-left  font-cdb text-[1rem] sm:text-[1.2rem] md:text-[1.5rem]">
             National Institite of Technology <br /> Andhra pradesh
           </p>
-        </div>
-        <div className="absolute w-full -z-20">
+        </div> */}
+        <div className="absolute w-full -z-10">
+          <div className="w-full h-[100dvh] bg-[#808080]/50 absolute">
+
+          </div>
           <video
             src={bgvideo}
             autoPlay

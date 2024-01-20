@@ -8,7 +8,7 @@ const Footer = () => {
     <div className='w-[100vw] bg-black px-[2rem] py-[2rem] flex flex-col gap-[3rem] justify-center items-center'>
         <div className='w-full flex gap-[2.5rem] md:flex-row flex-col justify-between items-start text-white'>
             <div className='md:w-auto w-full flex flex-col gap-[1rem] md:justify-start md:items-start justify-center items-center'>
-                <div className='w-full flex justify-center items-center'><img src={logo} className='w-[200px]'/></div>
+                <div className='w-full flex justify-center items-center'><img src={logo} alt='' className='w-[200px]'/></div>
                 <p className='text-white font-semibold text-center text-[1.25rem]'>Vulcanzy 2K24 - Cultural Fest</p>
                 <div className='w-full flex gap-[2rem] justify-center items-center'>
                     <FaXTwitter className='cursor-pointer text-[2rem] text-white hover:scale-105 transition-all duration-200' />

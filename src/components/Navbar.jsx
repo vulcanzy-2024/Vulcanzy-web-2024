@@ -17,7 +17,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="bg-opacity-20 backdrop-filter backdrop-blur-sm border-b-2 border-white p-4 fixed w-full">
+      <nav className="bg-opacity-20 backdrop-filter backdrop-blur-sm border-b-2  border-white p-4 fixed w-full ">
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex items-center">
             <img src={logo} alt="Techkriya Logo" className="w-[100px]" />

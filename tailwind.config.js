@@ -15,13 +15,13 @@ module.exports = {
         cdr:["cdregular","sans-serif"],
       },
       backgroundImage:{
-        "right_wave": "url('../src/images/home/right wave.svg')",
-        "left_wave": "url('../src/images/home/left wave.svg')",
-        "pink_drop":"url('../src/images/home/Pink drop.svg')",
-        "purple_drop":"url('../src/images/home/Purple drop.svg')",
-        "blue_drop":"url('../src/images/home/Blue drop.svg')",
-        "pastle":"url('../src/images/home/Pastle bubbles.svg')",
-        "blue_bubbles":"url('../src/images/home/blue bubbles.svg')"
+        "right_wave": "url('../src/assets/images/home/right wave.svg')",
+        "left_wave": "url('../src/assets/images/home/left wave.svg')",
+        "pink_drop":"url('../src/assets/images/home/Pink drop.svg')",
+        "purple_drop":"url('../src/assets/images/home/Purple drop.svg')",
+        "blue_drop":"url('../src/assets/images/home/Blue drop.svg')",
+        "pastle":"url('../src/assets/images/home/Pastle bubbles.svg')",
+        "blue_bubbles":"url('../src/assets/images/home/blue bubbles.svg')"
       }
     },
   },

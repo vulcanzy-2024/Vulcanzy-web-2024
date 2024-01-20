@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './hostelAccomodation.css'
-import wave from '../assets/waves.png'
+// import wave from '../assets/waves.png'
 
 const HostelAccomodation = () => {
 
