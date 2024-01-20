@@ -26,23 +26,23 @@ function Timer() {
     };
   });
   return (
-    <section className="w-full text-5xl">
+    <section className="w-full sm:text-3xl lg:text-5xl">
       <div className="flex flex-wrap gap-y-8 text-orange-600 font-bold text-center justify-center md:justify-between">
-        <div className="px-6">
+        <div className="sm:px-6 px-4">
           <h3 className="day">--</h3>
-          <label className="text-[1.25rem]">Days</label>
+          <label className="lg:text-[1.25rem] sm:text-[1rem]">Days</label>
         </div>
-        <div className="px-6">
+        <div className="sm:px-6 px-4">
           <h3 className="hour">--</h3>
-          <label className="text-[1.25rem]">Hours</label>
+          <label className="sm:text-[1rem] lg:text-[1.25rem]">Hours</label>
         </div>
-        <div className="px-6">
+        <div className="sm:px-6 px-4">
           <h3 className="minute">--</h3>
-          <label className="text-[1.25rem]">Minutes</label>
+          <label className="sm:text-[1rem] lg:text-[1.25rem]">Minutes</label>
         </div>
-        <div className="px-6">
+        <div className="sm:px-6 px-4">
           <h3 className="second">--</h3>
-          <label className="text-[1.25rem]">Seconds</label>
+          <label className="sm:text-[1rem] lg:text-[1.25rem]">Seconds</label>
         </div>
       </div>
     </section>
