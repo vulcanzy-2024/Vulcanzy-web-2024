@@ -1,15 +1,21 @@
-import React from 'react';
-import EventsPage from './Pages/Events';
-import Gallery from './Pages/Gallery'
+
+     import HostelAccomodation from './pages/HostelAccomodation';
+import { Route, Routes } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Home from './pages/Home';
+import './App.css';
 
 const App = () => {
   return (
-   <>
-      {/* <EventsPage/> */}
-      <Gallery/>
-   </>
-      
-   
+    <div className='min-h-[100vh] flex flex-col  overflow-x-hidden'>
+      <Navbar />
+      <Routes>
+        <Route path='/hostelAccomodation' element={<HostelAccomodation />} />
+        <Route path='/' element={<Home/>}/>
+      </Routes>
+      <Footer />
+    </div>
   );
 }
 
