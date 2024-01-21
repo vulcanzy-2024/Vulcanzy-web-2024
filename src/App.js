@@ -9,7 +9,7 @@ import Gallery from "./pages/Gallery";
 
 const App = () => {
   return (
-    <div className="min-h-[100vh] flex flex-col  overflow-x-hidden">
+    <div className="min-h-[100vh]  flex flex-col  overflow-x-hidden">
       <Navbar />
       <Routes>
         <Route path="/hostelAccomodation" element={<HostelAccomodation />} />

@@ -13,6 +13,7 @@ module.exports = {
       fontFamily:{
         cdb:["cdbold","sans-serif"],
         cdr:["cdregular","sans-serif"],
+        lazy:["lazy","sans-serif"],
       },
       backgroundImage:{
         "right_wave": "url('../src/assets/images/home/right wave.svg')",

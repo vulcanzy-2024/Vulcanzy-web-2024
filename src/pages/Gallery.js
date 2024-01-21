@@ -15,7 +15,7 @@ const Gallery=()=>{
           </div>
         </div>
        
-        <div className="flex justify-center items-center  w-full h-[760px] mt-[-30px] md:mt-[0px] md:pt-[30px]  md:h-[430px] bg-black">
+        <div className="flex justify-center items-center w-full h-[760px] mt-[-30px] md:mt-[0px] md:pt-[30px]  md:h-[430px] bg-black">
       <div className="max-w-2xl ">
         <Carousel autoSlide={true} >
           {[...slides.map((s) => (

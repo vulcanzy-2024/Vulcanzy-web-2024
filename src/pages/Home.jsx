@@ -29,7 +29,7 @@ const Home = () => {
             className="w-[100%]  h-[100dvh] object-cover"
           ></video>
         </div>
-        <div className="w-[80%] sm:w-[50%] ">
+        <div className="w-[80%] mt-10 sm:mt-0 sm:w-[50%] ">
           <img src={logo} className="opacity-60" alt="" />
         </div>
         <div className="flex w-[90%] -mt-10 sm:-mt-0 sm:w-[45%] flex-col justify-center items-center">
@@ -51,7 +51,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="bg-black flex justify-center relative items-center h-[80dvh] w-full ">
+      <div className="bg-black flex p-5 justify-center relative items-center  w-full ">
         <div className="w-[35%]">
           <img src={wave} alt="" />
         </div>
@@ -73,7 +73,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="bg-black -z-20 w-full h-[50dvh] sm:h-[50rem] relative overflow-clip flex items-center justify-start">
+      <div className="bg-black  w-full p-5  relative overflow-clip flex items-center -z-40 justify-start">
         <div className=" ml-5  justify-around items-center flex flex-col w-full md:w-[50%]">
           <p className="font-cdb text-[1rem] w-full text-center sm:text-[1.5rem]  lg:text-[2rem] text-white ">
             WAVES ARE ABOUT TO RUSH IN
@@ -94,19 +94,19 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="bg-black   h-[100dvh] w-full flex justify-center items-center overflow-clip relative -z-20">
+      <div className="bg-black w-full h-max flex justify-center font-lazy items-center overflow-clip relative -z-20">
         <div className="bg-right_wave  bg-contain w-[20rem]  bg-no-repeat h-[20rem] sm:h-[25rem] md:h-[30rem] sm:w-[25rem] md:w-[30rem]  absolute -right-[10rem] sm:-right-[11rem] md:-right-[15rem]   -z-10"></div>
         <div className="bg-left_wave  w-[20rem] bg-contain   bg-no-repeat h-[20rem] sm:h-[25rem] md:h-[30rem] sm:w-[25rem] md:w-[30rem]  absolute -left-[10rem] sm:-left-[12rem] md:-left-[16rem]  "></div>
-        <div className="grid grid-cols-2 gap-12 grid-rows-2 justify-items-center   w-[85%] h-full">
+        <div className="grid relative -top-20  grid-cols-2 gap-12 grid-rows-2 justify-items-center   w-[70%] h-[50%]">
           <div className="  bg-pink_drop  self-center w-[20rem] h-[20rem] sm:w-[25rem]  sm:h-[25rem] md:w-[35rem] md:h-[35rem] bg-contain   bg-no-repeat flex justify-center items-center">
-            <p className="font-cdb sm:text-xl  text-center  ">Events</p>
+            <p className=" text-[1.2rem] sm:text-[1.8rem] md:text-[2.2rem]  ">Events</p>
           </div>
           <div className="bg-blue_drop  self-center w-[20rem] h-[20rem] sm:w-[25rem]  sm:h-[25rem] md:w-[35rem] md:h-[35rem]  bg-contain   bg-no-repeat flex justify-center items-center">
-            <p className="font-cdb sm:text-xl  text-center  ">Gallery</p>
+            <p className=" text-[1.2rem] sm:text-[1.8rem] md:text-[2.2rem]  text-center  ">Gallery</p>
           </div>
           <div className="  col-span-2 self-center  flex justify-center">
             <div className="  bg-purple_drop  w-[25rem] h-[25rem]  sm:w-[30rem]  sm:h-[30rem] md:w-[35rem] md:h-[35rem]  bg-contain   bg-no-repeat flex justify-center items-center -mt-60 sm:mt-0">
-              <p className="font-cdb text-[0.8rem] sm:text-lg md:text-xl text-center text-wrap w-[9rem] -ml-5 sm:-ml-[4rem] sm:mt-9 md:mt-5">
+              <p className=" text-[1.2rem] sm:text-[1.8rem] md:text-[2.2rem] text-center text-wrap w-[9rem] -ml-5 sm:-ml-[3rem] sm:mt-9 md:mt-5">
                 Accomodation Details
               </p>
             </div>

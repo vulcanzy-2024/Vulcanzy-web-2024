@@ -10,3 +10,8 @@
     font-family: "cdregular";
     src: url("./fonts/cinzel_decorative/CinzelDecorative-Regular.ttf");
   }
+  
+@font-face {
+    font-family: "lazy";
+    src: url("./fonts/lazy_dog/lazy_dog.ttf");
+  }
