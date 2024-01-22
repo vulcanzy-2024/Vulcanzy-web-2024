@@ -39,12 +39,12 @@ const Home = () => {
           </p>
         </div> */}
         <div className="absolute w-full -z-10">
-          <div className="w-full h-[100dvh]  absolute"></div>
+          <div className="w-full h-[100dvh] bg-[#808080]/50  absolute"></div>
           <video
             src={bgvideo}
             autoPlay
             loop
-            className="w-[100%] opacity-80 h-[100dvh] object-cover"
+            className="w-[100%]  h-[100dvh] object-cover"
           ></video>
         </div>
         <div className="w-[80%] mt-10 sm:mt-0 sm:w-[50%] ">
@@ -137,8 +137,8 @@ const Home = () => {
 
       <div className="w-full  bg-black flex justify-center flex-col items-center relative overflow-clip -z-30">
         <p className="text-white font-cdb text-4xl">Our Sponsors</p>
-        <div className="opacity-60 bg-blue_bubbles w-[20rem] h-[20rem] absolute -right-[4rem] bottom-0 sm:w-[30rem] sm:h-[30rem] bg-contain   bg-no-repeat -z-10"></div>
-        <div className="opacity-60 bg-pastle w-[20rem] h-[20rem] sm:w-[30rem] sm:h-[30rem] absolute -left-[8rem] top-5 sm:-left-[12rem] sm:-top-10 bg-contain   bg-no-repeat -z-20"></div>
+        {/* <div className="opacity-60 bg-blue_bubbles w-[20rem] h-[20rem] absolute -right-[4rem] bottom-0 sm:w-[30rem] sm:h-[30rem] bg-contain   bg-no-repeat -z-10"></div>
+        <div className="opacity-60 bg-pastle w-[20rem] h-[20rem] sm:w-[30rem] sm:h-[30rem] absolute -left-[8rem] top-5 sm:-left-[12rem] sm:-top-10 bg-contain   bg-no-repeat -z-20"></div> */}
         <div className="h-[90%] flex flex-wrap justify-center items-center md:grid grid-cols-3 justify-items-center w-full">
           {sponsors.map((sponsor) => (
             <div className="flex justify-center flex-col items-center m-5 gap-5">

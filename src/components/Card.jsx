@@ -4,6 +4,7 @@ import { events } from "../Constants/index.js";
 
 const EventCard = ({
   index,
+  poster,
   name,
   club,
   description
@@ -18,16 +19,18 @@ const EventCard = ({
         className='bg-tertiary p-5 pb-1 rounded-2xl sm:w-[360px] w-full'
       >
 
-    <div className=" md:mt-5">
-      <div class="block bg-pink-500 max-w-sm h-[350px]  p-5 pt-4 border border-gray-200 rounded-lg shadow hover:bg-pink-400  dark:border-gray-700 ">
-        <h5 class="mb-1  text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+    <div className=" md:mt-5 relative font-cdb ">
+    
+      <div className="flex flex-col bg-gradient-to-bl from-orange-500 to-pink-500  items-center justify-end  backdrop-filter backdrop-blur-sm  relative max-w-sm max-h-[30rem] min-h-[30rem] gap-2  p-5 pt-4 border border-gray-200 rounded-lg shadow   dark:border-gray-700 ">
+        {/* <img src={poster} className=" rounded-lg w-full " alt="" /> */}
+        <h5 class="mb-1  text-2xl font-bold tracking-tight text-center text-gray-900 dark:text-white">
           {name}
         </h5>
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+        <h5 class="mb-2  text-2xl font-bold tracking-tight text-gray-900">
           {club}
         </h5>
-        <p class="font-normal text-gray-200 ">
-         {description}
+        <p class="font-sans w-[80%]  text-gray-200 ">
+         {description.slice(0,140)+"..."}
         </p>
       </div>
     </div>
