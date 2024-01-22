@@ -92,7 +92,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="bg-black  w-full h-[20rem]  relative overflow-clip flex items-center -z-40 justify-start">
+      <div className="bg-black  w-full h-[20rem] sm:h-max relative overflow-clip flex items-center -z-40 justify-start">
         <div className=" ml-5  justify-around items-center flex flex-col w-full md:w-[50%]">
           <p className="font-cdb text-[1rem] w-full text-center sm:text-[1.5rem]  lg:text-[2rem] text-white ">
             WAVES ARE ABOUT TO RUSH IN

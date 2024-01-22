@@ -6,14 +6,14 @@ import logo from "../assets/logo.png";
 
 const Navbar = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-
+  const link="https://drive.google.com/file/d/1lOn0HohR-UrVrHURFUnclhwrxr8Z-lmL/view?usp=sharing"
   const toggleDrawer = () => {
     setIsDrawerOpen(!isDrawerOpen);
   };
 
-  const handleBrochureDownload = () => {
-    // Handle brochure download logic
-  };
+  // const handleBrochureDownload = () => {
+  //   // Handle brochure download logic
+  // };
 
   return (
     <>
@@ -44,9 +44,10 @@ const Navbar = () => {
             <NavLink to="/hostelAccomodation" className="text-white">
               Hostel Accomodation
             </NavLink>
-            <button className="text-white" onClick={handleBrochureDownload}>
+            {/* <a href="https://drive.google.com/file/d/1lOn0HohR-UrVrHURFUnclhwrxr8Z-lmL/view?usp=sharing" target="blank" className="text-white"> */}
+            <a href={link} target="black" className="text-white">
               BROCHURE
-            </button>
+            </a>
           </div>
 
           <div className="md:hidden">
@@ -109,15 +110,13 @@ const Navbar = () => {
                 </NavLink>
               </li>
               <li className="w-full text-center">
-                <button
+                <a
+                  href={link}
+                  target="black"
                   className="text-white w-full text-center"
-                  onClick={() => {
-                    handleBrochureDownload();
-                    toggleDrawer();
-                  }}
                 >
                   BROCHURE
-                </button>
+                </a>
               </li>
             </ul>
           </div>
