@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import "./App.css";
 import EventsPage from "./pages/Events";
 import Gallery from "./pages/Gallery";
+import Sponsors from "./pages/Sponsors";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/events" element={<EventsPage />} />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="/sponsors" element={<Sponsors/>} />
       </Routes>
       <Footer />
     </div>

@@ -4,6 +4,7 @@ import bgvideo from "../assets/video/Vulcanzy.mp4";
 import des1 from "../assets/images/home/sunwaves.svg";
 import clock from "../assets/images/home/Clock.svg";
 import Timer from "../components/Timer";
+import sponsors from "../Constants/sponsors";
 // import bubble from "../assets/images/home/Purple drop.svg";
 // import Nit_Logo from "../images/home/NITAP_LOGO.png";
 import wave from "../assets/images/wave.png";
@@ -11,7 +12,7 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <>
-      <div className=" flex am:justify-around items-center flex-col sm:flex-row h-[100vh] w-[100%] overflow-clip relative">
+      <div className=" flex am:justify-around items-center flex-col sm:flex-row h-[100dvh] w-[100%] overflow-clip relative">
         {/* <div className="absolute top-4 left-10 flex text-white gap-5 justify-center items-center">
           <img
             src={Nit_Logo}
@@ -48,15 +49,13 @@ const Home = () => {
         </div>
         <div className="w-full absolute bottom-2">
           <p className="text-white absolute bottom-5 w-full text-center sm:text-[1.2rem] md:text-[1.4rem]">
-          <Link to="/hostelAccomodation">
-            Register to avail accomodation
-          </Link>
+            <Link to="/hostelAccomodation">Register to avail accomodation</Link>
           </p>
         </div>
       </div>
 
-      <div className="bg-black flex p-5 flex-col tracking-wide sm:flex-row md:flex-row justify-center relative items-center  w-full ">
-        <div className=" w-[35%]">
+      <div className="bg-black flex p-6 sm:p-5 flex-col tracking-wide sm:flex-row md:flex-row justify-center relative items-center  w-full ">
+        <div className="w-[45%] sm:w-[35%]">
           <img src={wave} alt="" />
         </div>
         <div className="w-full sm:w-[60%] flex flex-col justify-center -mt-3 sm:mt-0 md:-mt-2 items-center">
@@ -64,11 +63,11 @@ const Home = () => {
             {" "}
             TARANG{" "}
           </p>
-          <p className="text-white ga text-[0.8rem] sm:text-[1.2rem] md:text-[1.4rem]  text-center mt-3 sm:mt-5 font-cdb ">
+          <p className="text-white ga  sm:text-[1rem] md:text-[1.4rem]  text-center mt-3 sm:mt-5 font-cdb ">
             VULCANZY'24 IS A PRESTIGIOUS EVENT OF <br /> THE YEAR AT{" "}
             <span className="font-cdb text-pink-500">NIT ANP</span>
           </p>
-          <p className="text-white  text-[0.8rem] sm:text-[1.2rem] md:text-[1.4rem] font-cdb text-center mt-5">
+          <p className="text-white   sm:text-[1rem] md:text-[1.4rem] font-cdb text-center mt-5">
             COME AND JOIN US ON{" "}
             <span className="font-cdb text-orange-500">2-2-24</span> AND{" "}
             <span className="font-cdb text-orange-500">3-2-24</span>
@@ -119,11 +118,18 @@ const Home = () => {
         </div>
       </div> */}
 
-      <div className="w-full h-[100vh] bg-black flex justify-center flex-col items-center relative overflow-clip -z-30">
+      <div className="w-full  bg-black flex justify-center flex-col items-center relative overflow-clip -z-30">
         <p className="text-white font-cdr text-3xl">Our Sponsors</p>
-        <div className="bg-blue_bubbles w-[20rem] h-[20rem] absolute -right-[4rem] bottom-0 sm:w-[30rem] sm:h-[30rem] bg-contain   bg-no-repeat -z-10"></div>
-        <div className="bg-pastle w-[20rem] h-[20rem] sm:w-[30rem] sm:h-[30rem] absolute -left-[8rem] top-5 sm:-left-[12rem] sm:-top-10 bg-contain   bg-no-repeat -z-20"></div>
-        <div className="h-[90%]"></div>
+        <div className="opacity-60 bg-blue_bubbles w-[20rem] h-[20rem] absolute -right-[4rem] bottom-0 sm:w-[30rem] sm:h-[30rem] bg-contain   bg-no-repeat -z-10"></div>
+        <div className="opacity-60 bg-pastle w-[20rem] h-[20rem] sm:w-[30rem] sm:h-[30rem] absolute -left-[8rem] top-5 sm:-left-[12rem] sm:-top-10 bg-contain   bg-no-repeat -z-20"></div>
+        <div className="h-[90%] flex flex-wrap justify-center items-center md:grid grid-cols-3 justify-items-center w-full">
+          {sponsors.map((sponsor) => (
+            <div className="flex justify-center flex-col items-center m-5 gap-5">
+              <img src={sponsor.images} className="w-auto h-[6rem]" alt="" />
+              <p className="text-white font-cdr text-center text-2xl">{sponsor.title} </p>
+            </div>
+          ))}
+        </div>
       </div>
 
       <div className="bg-black flex justify-center relative h-[10rem] w-full items-center ">
