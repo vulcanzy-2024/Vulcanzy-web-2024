@@ -4,6 +4,7 @@ import bgvideo from "../assets/video/Vulcanzy.mp4";
 import des1 from "../assets/images/home/sunwaves.svg";
 import clock from "../assets/images/home/Clock.svg";
 import Timer from "../components/Timer";
+import bubble from "../assets/images/home/Purple drop.svg";
 // import Nit_Logo from "../images/home/NITAP_LOGO.png";
 import wave from "../assets/images/wave.png";
 const Home = () => {
@@ -73,7 +74,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="bg-black  w-full p-5  relative overflow-clip flex items-center -z-40 justify-start">
+      <div className="bg-black  w-full   relative overflow-clip flex items-center -z-40 justify-start">
         <div className=" ml-5  justify-around items-center flex flex-col w-full md:w-[50%]">
           <p className="font-cdb text-[1rem] w-full text-center sm:text-[1.5rem]  lg:text-[2rem] text-white ">
             WAVES ARE ABOUT TO RUSH IN
@@ -93,26 +94,47 @@ const Home = () => {
           />
         </div>
       </div>
-
-      <div className="bg-black w-full h-max flex justify-center font-lazy items-center overflow-clip relative -z-20">
+      {/* 
+      <div className="bg-black w-full  flex justify-center font-lazy items-center overflow-clip relative -z-20">
         <div className="bg-right_wave  bg-contain w-[20rem]  bg-no-repeat h-[20rem] sm:h-[25rem] md:h-[30rem] sm:w-[25rem] md:w-[30rem]  absolute -right-[10rem] sm:-right-[11rem] md:-right-[15rem]   -z-10"></div>
         <div className="bg-left_wave  w-[20rem] bg-contain   bg-no-repeat h-[20rem] sm:h-[25rem] md:h-[30rem] sm:w-[25rem] md:w-[30rem]  absolute -left-[10rem] sm:-left-[12rem] md:-left-[16rem]  "></div>
         <div className="grid relative -top-20  grid-cols-2 gap-12 grid-rows-2 justify-items-center   w-[70%] h-[50%]">
-          <div className="  bg-pink_drop  self-center w-[20rem] h-[20rem] sm:w-[25rem]  sm:h-[25rem] md:w-[35rem] md:h-[35rem] bg-contain   bg-no-repeat flex justify-center items-center">
-            <p className=" text-[1.2rem] sm:text-[1.8rem] md:text-[2.2rem]  ">Events</p>
+          <div className="  p-5 self-center relative w-[15rem] h-[15rem] sm:w-[25rem]  sm:h-[25rem] md:w-[35rem] md:h-[35rem] bg-contain   bg-no-repeat flex justify-center items-center">
+            <img src={bubble} className="absolute " alt="" />
+            <p className=" text-[1.2rem] sm:text-[1.8rem] md:text-[2.2rem] z-[2] ">Events</p>
           </div>
-          <div className="bg-blue_drop  self-center w-[20rem] h-[20rem] sm:w-[25rem]  sm:h-[25rem] md:w-[35rem] md:h-[35rem]  bg-contain   bg-no-repeat flex justify-center items-center">
+          <div className="bg-blue_drop  self-center w-[15rem] h-[15rem] sm:w-[25rem]  sm:h-[25rem] md:w-[35rem] md:h-[35rem]  bg-contain   bg-no-repeat flex justify-center items-center">
             <p className=" text-[1.2rem] sm:text-[1.8rem] md:text-[2.2rem]  text-center  ">Gallery</p>
           </div>
           <div className="  col-span-2 self-center  flex justify-center">
-            <div className="  bg-purple_drop  w-[25rem] h-[25rem]  sm:w-[30rem]  sm:h-[30rem] md:w-[35rem] md:h-[35rem]  bg-contain   bg-no-repeat flex justify-center items-center -mt-60 sm:mt-0">
+            <div className="  bg-purple_drop  w-[15rem] h-[15rem]  sm:w-[30rem]  sm:h-[30rem] md:w-[35rem] md:h-[35rem]  bg-contain   bg-no-repeat flex justify-center items-center -mt-60 sm:mt-0">
               <p className=" text-[1.2rem] sm:text-[1.8rem] md:text-[2.2rem] text-center text-wrap w-[9rem] -ml-5 sm:-ml-[3rem] sm:mt-9 md:mt-5">
                 Accomodation Details
               </p>
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
+
+      {/* <div className="bg- h-[60rem] relative">
+        <div className="h-full  w-full flex justify-center items-center">
+          <div className="bg-right_wave  bg-contain w-[20rem]  bg-no-repeat h-[20rem] sm:h-[25rem] md:h-[30rem] sm:w-[25rem] md:w-[30rem]  absolute -right-[10rem] sm:-right-[11rem] md:-right-[15rem]  "></div>
+          <div className="bg-left_wave  w-[20rem] bg-contain   bg-no-repeat h-[20rem] sm:h-[25rem] md:h-[30rem] sm:w-[25rem] md:w-[30rem]  absolute -left-[10rem] sm:-left-[12rem] md:-left-[16rem]  "></div>
+        </div>
+        <div className="grid grid-cols-2 h-full w-full justify-items-stretch absolute top-0">
+          <div className="bg-blue_drop  w-[15rem] h-[15rem] sm:w-[25rem]  sm:h-[25rem] md:w-[35rem] md:h-[35rem]  bg-contain   bg-no-repeat flex justify-center items-center">
+            <p className=" text-[1.2rem] sm:text-[1.8rem] md:text-[2.2rem]  text-center  ">Gallery</p>
+          </div>
+          <div className="bg-pink_drop  w-[15rem] h-[15rem] sm:w-[25rem]  sm:h-[25rem] md:w-[35rem] md:h-[35rem]  bg-contain   bg-no-repeat flex justify-center items-center">
+            <p className=" text-[1.2rem] sm:text-[1.8rem] md:text-[2.2rem]  text-center  ">Gallery</p>
+          </div>
+          <div className="bg-purple_drop  w-[15rem] h-[15rem]  sm:w-[30rem]  sm:h-[30rem] md:w-[35rem] md:h-[35rem]  bg-contain   bg-no-repeat flex justify-center items-center">
+            <p className=" text-[1.2rem] sm:text-[1.8rem] md:text-[2.2rem] text-center text-wrap w-[9rem] -ml-5 sm:-ml-[3rem] sm:mt-9 md:mt-5">
+              Accomodation Details
+            </p>
+          </div>
+        </div>
+      </div> */}
 
       <div className="w-full h-[100dvh] bg-black flex justify-center flex-col items-center relative overflow-clip -z-30">
         <p className="text-white font-cdr text-3xl">Our Sponsors</p>
