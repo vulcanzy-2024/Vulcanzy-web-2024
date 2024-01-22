@@ -31,15 +31,18 @@ const Navbar = () => {
             </div>
           </div>
 
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden  md:flex items-center space-x-4">
             <NavLink to="/events" className="text-white">
-              EVENTS
+              Events
             </NavLink>
             <NavLink to="/gallery" className="text-white">
-              GALLERY
+              Gallery
             </NavLink>
             <NavLink to="/sponsors" className="text-white">
-              OUR SPONSORS
+              Our Sponsors
+            </NavLink>
+            <NavLink to="/hostelAccomodation" className="text-white">
+              Hostel Accomodation
             </NavLink>
             <button className="text-white" onClick={handleBrochureDownload}>
               BROCHURE
@@ -67,7 +70,7 @@ const Navbar = () => {
             <ul className="w-full mt-4 space-y-5 font-bold">
               <li className="w-full text-center">
                 <NavLink to="/" className="text-white w-full text-center">
-                  HOME
+                  Home
                 </NavLink>
               </li>
               <li className="w-full text-center">
@@ -76,7 +79,7 @@ const Navbar = () => {
                   className="text-white w-full text-center"
                   onClick={toggleDrawer}
                 >
-                  EVENTS
+                  Events
                 </NavLink>
               </li>
               <li className="w-full text-center">
@@ -84,7 +87,15 @@ const Navbar = () => {
                   to="/gallery"
                   className="text-white w-full text-center"
                 >
-                  GALLERY
+                  Gallery
+                </NavLink>
+              </li>
+              <li className="w-full text-center">
+                <NavLink
+                  to="/hostelAccomodation"
+                  className="text-white w-full text-center"
+                >
+                  Hostel Accomodation
                 </NavLink>
               </li>
 
@@ -94,7 +105,7 @@ const Navbar = () => {
                   className="text-white w-full text-center"
                   onClick={toggleDrawer}
                 >
-                  OUR SPONSORS
+                  Our Sponsors
                 </NavLink>
               </li>
               <li className="w-full text-center">

@@ -16,7 +16,19 @@ import o from "../assets/images/gallery/3d.JPG";
 import p from "../assets/images/gallery/verticle/4a.jpg";
 import q from "../assets/images/gallery/4b.JPG";
 import r from "../assets/images/gallery/verticle/4c.jpg";
-
+import bea from "../assets/images/events/Takeshi's Castle .jpg";
+import ch from "../assets/images/events/Scavenger Hunt_ChEA.png";
+import chitram from "../assets/images/events/SHORT FILM POSTER.jpg";
+// import chitram1 from "../assets/images/events/EVENT PROMOTION POSTER.jpg"
+import gc from "../assets/images/events/Eschewal .png";
+import pe from "../assets/images/events/cube craze.png";
+import pe1 from "../assets/images/events/Box cricket.png";
+import prayatnam from "../assets/images/events/dare to perform.png";
+import prayatnam1 from "../assets/images/events/dark room quest.png";
+import prayatnam2 from "../assets/images/events/lip sync.png";
+import shres from "../assets/images/events/Event01.jpg";
+import shres1 from "../assets/images/events/Event02.jpg";
+import shres2 from "../assets/images/events/Event03.jpg";
 const events = [
   {
     name: "Music Mania",
@@ -75,6 +87,7 @@ const events = [
     link: "",
   },
   {
+    image: bea,
     name: "Takeshi's Castle",
     club: "Bea",
     description:
@@ -89,12 +102,14 @@ const events = [
     link: "",
   },
   {
+    image: ch,
     name: "Scavenger Hunt",
     club: "Chea",
     description:
       "Scavenger hunt that will challenge participant's knowledge, teamwork, and problem-solving skills. This quest is designed to explore various aspects of chemical engineering, from fundamental principles to real-world applications. The team will be given clues and based on that they have to perform tasks such as titration and performing chemical reactions to reach desired results.",
   },
   {
+    image: chitram,
     name: "Short Film",
     club: "Chitram",
     description:
@@ -155,7 +170,8 @@ const events = [
       "This game is played using remote-controlled cars on any flat surface withminimal friction.Two players, each with a differentlycolored remote car, compete against eachother. The objective isto knock down plastic bowling jars or tinsof two distinct colors. Car 1 aims to topplethe jars of theopposite color, and vice versa for Car 2.",
   },
   {
-    name: "Escape Room",
+    image: gc,
+    name: "Eschewal",
     club: "Gc",
     description:
       "Dive into a thrilling escape room experience where you'll unravel the mysteries of Fiametta's curse. Locked within a medieval dungeon teeming with traps and secrets, the only escape lies in solving riddles, deciphering clues, and outsmarting cunning puzzles. But beware: Fiametta's tormented spirit roams the darkness, searching for a savior. Will be the one to break her curse and find freedom from this eternal prison?",
@@ -191,14 +207,16 @@ const events = [
       "The objective of the 'Safari Paths' is to offer participants a wild adventure in our jungle themed Safari! Navigate through the dense foliage and encounter exotic creatures as you climb and slide down the scary creatures. Beware of hidden challenges and revel in the excitement of this unique, nature-inspired gaming experience.",
   },
   {
+    image: pe1,
     name: "Box Cricket",
     club: "Pe",
     description:
       "'Box cricket' typically refers to a simplified version of traditional cricket that can be played in a, confined space. The rules and setup may vary.",
   },
   {
+    image: pe,
     name: "Cube Craze",
-    club: "",
+    club: "Pe",
     description:
       "Participants need to choose Rubik's cube of different types of their choice to solve it. Equipment: Rubik's cubes of sizes 2*2, 3*3, Pyramid",
   },
@@ -215,36 +233,42 @@ const events = [
       "The cardboard sculpture event is a creative gathering where participants use cardboard as their primary medium to sculpt imaginative and often intricate structures. Artists and enthusiasts come together to showcase their skills in manipulating cardboard into various forms, ranging from abstract art to detailed sculptures.",
   },
   {
+    image: prayatnam2,
     name: "Lip Sync Game",
     club: "Prayatnam",
     description:
       "In this game we will give headphone to the participant and we will play music and they have to move their lips and their partner has to guess the song or movie whatever is playing in the headphone but with this some surprise constraint will be there which they have to pick from random box which will contain some chit.",
   },
   {
+    image: prayatnam,
     name: "Dare to Perform",
     club: "Prayatnam",
     description:
       "This game will be in 2nd day of Vulcanzy, in which there will be a wheel with some activity written on it and participant have to through a dart on the wheel and whatever activity will come they have to perform that, under some time constraint.",
   },
   {
+    image: prayatnam1,
     name: "Dark Room Quest",
     club: "Prayatnam",
     description:
       "In this game there will be levels in a dark room, in which a participant will enter and he/she has to pass the levels one of one and if someone will pass all the levels, they will get the certificate. And, in the levels there will be photo recognition, music recognition and similar hard levels.",
   },
   {
+    image:shres,
     name: "Pandemic Elegance",
     club: "Shresta",
     description:
       "Pandemic Elegance is a sophisticated event that immerses participants in a captivating game inspired by 'Pandemic Legacy'. Embracing an air of refinement, the event combines strategic gameplay with an unfolding narrative. Participants, organized into teams, collaboratively work to navigate the evolving challenges presented in the legacy format, making decisions that shape the game's narrative.",
   },
   {
+    image: shres1,
     name: "Dartacular Challenge",
     club: "Shresta",
     description:
       "Dartacular Challenge is a competitive dart event where participants showcase precision and skill through various dart games like 501, Cricket, and Around the Clock. Whether competing Individually or in teams, participants aim to achieve the highest scores within specified rounds. The tournament structure may follow a round-robin or knockout format, ensuring an engaging and competitive atmosphere. Adherence to fair play, respect, and venue rules is expected",
   },
   {
+    image: shres2,
     name: "QuantumScape VR Adventure",
     club: "Shresta",
     description:

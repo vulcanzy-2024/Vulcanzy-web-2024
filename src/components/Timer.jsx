@@ -26,7 +26,7 @@ function Timer() {
     };
   });
   return (
-    <section className="w-full sm:text-3xl lg:text-5xl">
+    <section className="w-full text-[0.8rem] sm:text-3xl lg:text-5xl">
       <div className="flex flex-wrap gap-y-8 text-orange-600 font-bold text-center justify-center md:justify-between">
         <div className="sm:px-6 px-4">
           <h3 className="day">--</h3>
