@@ -1,5 +1,7 @@
 import logo from "../assets/images/home/VULCANZY_BLACK.png";
+import { useInView } from "react-intersection-observer";
 import React from "react";
+import { useEffect } from "react";
 import bgvideo from "../assets/video/Vulcanzy.mp4";
 import des1 from "../assets/images/home/sunwaves.svg";
 import clock from "../assets/images/home/Clock.svg";
@@ -10,6 +12,19 @@ import sponsors from "../Constants/sponsors";
 import wave from "../assets/images/wave.png";
 import { Link } from "react-router-dom";
 const Home = () => {
+  const { ref:slide, inView } = useInView()
+  const {ref:design,inView:inView2}=useInView()
+    useEffect(() => {
+      const designImg=document.getElementById("design")
+      const waveImg=document.getElementById("wave")
+      if(inView){
+        waveImg.classList.add("animate-slide")
+      }
+      if(inView2){
+        designImg.classList.add("animate-pop")
+      }
+    }
+    , [inView,inView2])
   return (
     <>
       <div className=" flex am:justify-around items-center flex-col sm:flex-row h-[100dvh] w-[100%] overflow-clip relative">
@@ -55,7 +70,7 @@ const Home = () => {
       </div>
 
       <div className="bg-black flex p-6 sm:p-5 flex-col tracking-wide sm:flex-row md:flex-row justify-center relative items-center  w-full ">
-        <div className="w-[45%] sm:w-[35%]">
+        <div className="w-[45%]  sm:w-[35%]" id="wave" ref={slide}>
           <img src={wave} alt="" />
         </div>
         <div className="w-full sm:w-[60%] flex flex-col justify-center -mt-3 sm:mt-0 md:-mt-2 items-center">
@@ -90,6 +105,8 @@ const Home = () => {
             className="w-[10rem] md:w-[20rem] sm:w-[17rem] lg:w-[23rem] md:-mt-[4rem] -z-10"
           />
           <img
+          id="design"
+          ref={design}
             src={des1}
             alt=""
             className="opacity-35   md:opacity-100  md:w-[70%] absolute right-0 md:-right-20  "
@@ -119,7 +136,7 @@ const Home = () => {
       </div> */}
 
       <div className="w-full  bg-black flex justify-center flex-col items-center relative overflow-clip -z-30">
-        <p className="text-white font-cdr text-3xl">Our Sponsors</p>
+        <p className="text-white font-cdb text-4xl">Our Sponsors</p>
         <div className="opacity-60 bg-blue_bubbles w-[20rem] h-[20rem] absolute -right-[4rem] bottom-0 sm:w-[30rem] sm:h-[30rem] bg-contain   bg-no-repeat -z-10"></div>
         <div className="opacity-60 bg-pastle w-[20rem] h-[20rem] sm:w-[30rem] sm:h-[30rem] absolute -left-[8rem] top-5 sm:-left-[12rem] sm:-top-10 bg-contain   bg-no-repeat -z-20"></div>
         <div className="h-[90%] flex flex-wrap justify-center items-center md:grid grid-cols-3 justify-items-center w-full">
