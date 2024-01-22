@@ -34,7 +34,7 @@ const HostelAccomodation = () => {
                     {
                         rules.map((rule,index) => {
                             return (
-                                <div className='flex justify-start items-start gap-[0.5rem] text-[1.5rem]'>
+                                <div className='flex justify-start items-start gap-[0.5rem] text-[1.1rem] sm:text-[1.5rem]'>
                                     <div className='text-white'>{index+1}.</div>
                                     <div className='text-white'>{rule}</div>
                                 </div>

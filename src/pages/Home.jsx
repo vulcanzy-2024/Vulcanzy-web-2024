@@ -4,13 +4,14 @@ import bgvideo from "../assets/video/Vulcanzy.mp4";
 import des1 from "../assets/images/home/sunwaves.svg";
 import clock from "../assets/images/home/Clock.svg";
 import Timer from "../components/Timer";
-import bubble from "../assets/images/home/Purple drop.svg";
+// import bubble from "../assets/images/home/Purple drop.svg";
 // import Nit_Logo from "../images/home/NITAP_LOGO.png";
 import wave from "../assets/images/wave.png";
+import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <>
-      <div className=" flex am:justify-around items-center flex-col sm:flex-row h-[100dvh] w-[100%] overflow-clip relative">
+      <div className=" flex am:justify-around items-center flex-col sm:flex-row h-[100vh] w-[100%] overflow-clip relative">
         {/* <div className="absolute top-4 left-10 flex text-white gap-5 justify-center items-center">
           <img
             src={Nit_Logo}
@@ -22,18 +23,18 @@ const Home = () => {
           </p>
         </div> */}
         <div className="absolute w-full -z-10">
-          <div className="w-full h-[100dvh] bg-[#808080]/50 absolute"></div>
+          <div className="w-full h-[100dvh]  absolute"></div>
           <video
             src={bgvideo}
             autoPlay
             loop
-            className="w-[100%]  h-[100dvh] object-cover"
+            className="w-[100%] opacity-80 h-[100dvh] object-cover"
           ></video>
         </div>
         <div className="w-[80%] mt-10 sm:mt-0 sm:w-[50%] ">
           <img src={logo} className="opacity-60" alt="" />
         </div>
-        <div className="flex w-[90%] -mt-10 sm:-mt-0 sm:w-[45%] flex-col justify-center items-center">
+        <div className="flex w-[90%]  -mt-10 sm:-mt-0 sm:w-[45%] flex-col justify-center items-center">
           <p className="text-white text-[2.8rem] sm:text-[3.3rem] md:text-[4.456rem] lg:text-[5.5rem] font-cdb">
             {" "}
             VULCANZY{" "}
@@ -47,25 +48,27 @@ const Home = () => {
         </div>
         <div className="w-full absolute bottom-2">
           <p className="text-white absolute bottom-5 w-full text-center sm:text-[1.2rem] md:text-[1.4rem]">
+          <Link to="/hostelAccomodation">
             Register to avail accomodation
+          </Link>
           </p>
         </div>
       </div>
 
-      <div className="bg-black flex p-5 justify-center relative items-center  w-full ">
-        <div className="w-[35%]">
+      <div className="bg-black flex p-5 flex-col tracking-wide sm:flex-row md:flex-row justify-center relative items-center  w-full ">
+        <div className=" w-[35%]">
           <img src={wave} alt="" />
         </div>
-        <div className="w-[60%] flex flex-col justify-center items-center">
+        <div className="w-full sm:w-[60%] flex flex-col justify-center -mt-3 sm:mt-0 md:-mt-2 items-center">
           <p className="text-white text-[1.9rem] sm:text-[3.8rem] md:text-[4rem] lg:text-[5rem] font-cdb">
             {" "}
             TARANG{" "}
           </p>
-          <p className="text-white sm:text-[1.2rem] md:text-[1.4rem]  text-center mt-5 font-cdb ">
+          <p className="text-white ga text-[0.8rem] sm:text-[1.2rem] md:text-[1.4rem]  text-center mt-3 sm:mt-5 font-cdb ">
             VULCANZY'24 IS A PRESTIGIOUS EVENT OF <br /> THE YEAR AT{" "}
             <span className="font-cdb text-pink-500">NIT ANP</span>
           </p>
-          <p className="text-white sm:text-[1.2rem] md:text-[1.4rem] font-cdb text-center mt-5">
+          <p className="text-white  text-[0.8rem] sm:text-[1.2rem] md:text-[1.4rem] font-cdb text-center mt-5">
             COME AND JOIN US ON{" "}
             <span className="font-cdb text-orange-500">2-2-24</span> AND{" "}
             <span className="font-cdb text-orange-500">3-2-24</span>
@@ -116,34 +119,14 @@ const Home = () => {
         </div>
       </div> */}
 
-      {/* <div className="bg- h-[60rem] relative">
-        <div className="h-full  w-full flex justify-center items-center">
-          <div className="bg-right_wave  bg-contain w-[20rem]  bg-no-repeat h-[20rem] sm:h-[25rem] md:h-[30rem] sm:w-[25rem] md:w-[30rem]  absolute -right-[10rem] sm:-right-[11rem] md:-right-[15rem]  "></div>
-          <div className="bg-left_wave  w-[20rem] bg-contain   bg-no-repeat h-[20rem] sm:h-[25rem] md:h-[30rem] sm:w-[25rem] md:w-[30rem]  absolute -left-[10rem] sm:-left-[12rem] md:-left-[16rem]  "></div>
-        </div>
-        <div className="grid grid-cols-2 h-full w-full justify-items-stretch absolute top-0">
-          <div className="bg-blue_drop  w-[15rem] h-[15rem] sm:w-[25rem]  sm:h-[25rem] md:w-[35rem] md:h-[35rem]  bg-contain   bg-no-repeat flex justify-center items-center">
-            <p className=" text-[1.2rem] sm:text-[1.8rem] md:text-[2.2rem]  text-center  ">Gallery</p>
-          </div>
-          <div className="bg-pink_drop  w-[15rem] h-[15rem] sm:w-[25rem]  sm:h-[25rem] md:w-[35rem] md:h-[35rem]  bg-contain   bg-no-repeat flex justify-center items-center">
-            <p className=" text-[1.2rem] sm:text-[1.8rem] md:text-[2.2rem]  text-center  ">Gallery</p>
-          </div>
-          <div className="bg-purple_drop  w-[15rem] h-[15rem]  sm:w-[30rem]  sm:h-[30rem] md:w-[35rem] md:h-[35rem]  bg-contain   bg-no-repeat flex justify-center items-center">
-            <p className=" text-[1.2rem] sm:text-[1.8rem] md:text-[2.2rem] text-center text-wrap w-[9rem] -ml-5 sm:-ml-[3rem] sm:mt-9 md:mt-5">
-              Accomodation Details
-            </p>
-          </div>
-        </div>
-      </div> */}
-
-      <div className="w-full h-[100dvh] bg-black flex justify-center flex-col items-center relative overflow-clip -z-30">
+      <div className="w-full h-[100vh] bg-black flex justify-center flex-col items-center relative overflow-clip -z-30">
         <p className="text-white font-cdr text-3xl">Our Sponsors</p>
         <div className="bg-blue_bubbles w-[20rem] h-[20rem] absolute -right-[4rem] bottom-0 sm:w-[30rem] sm:h-[30rem] bg-contain   bg-no-repeat -z-10"></div>
         <div className="bg-pastle w-[20rem] h-[20rem] sm:w-[30rem] sm:h-[30rem] absolute -left-[8rem] top-5 sm:-left-[12rem] sm:-top-10 bg-contain   bg-no-repeat -z-20"></div>
         <div className="h-[90%]"></div>
       </div>
 
-      <div className="bg-black flex justify-center relative h-[10rem] w-full items-center z-10">
+      <div className="bg-black flex justify-center relative h-[10rem] w-full items-center ">
         <button className="font-cdr bg-gradient-to-r from-[#ff66c4] to-[#00ffff] h-[3.5rem] rounded-full text-black text-[1.3rem] w-[10rem]">
           Register
         </button>

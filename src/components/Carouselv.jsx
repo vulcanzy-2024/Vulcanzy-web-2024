@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { ChevronLeft, ChevronRight } from "react-feather"
 
-const Carousel = ({ children: slides, autoSlide = false, autoSlideInterval = 3000 }) => {
+const Carouselv = ({ children: slides, autoSlide = false, autoSlideInterval = 3000 }) => {
     const [curr, setCurr] = useState(0)
 
     const prev = () => setCurr((curr) => (curr === 0 ? slides.length - 1 : curr - 1))
@@ -16,7 +16,7 @@ const Carousel = ({ children: slides, autoSlide = false, autoSlideInterval = 300
 
 
     return (
-        <div className='overflow-hidden relative rounded-lg max-h-[461px] max-w-[600px] '>
+        <div className='overflow-hidden relative rounded-lg max-h-[600px] max-w-[461px] '>
             <div className='flex transition-transform ease-out duration-500' style={{ transform: `translateX(-${curr * 100}%)` }}>
                 {slides}
             </div>
@@ -40,4 +40,4 @@ const Carousel = ({ children: slides, autoSlide = false, autoSlideInterval = 300
     )
 }
 
-export default Carousel
+export default Carouselv
