@@ -25,7 +25,7 @@ const Footer = () => {
           <h1 className="text-[1.25rem] font-semibold text-[white]">
             Contact Us
           </h1>
-          <p className="text-white text-[1rem]">+91 1212121212</p>
+          <p className="text-white text-[1rem]">+91 99634 22039</p>
         </div>
         <div className="md:w-auto w-full flex flex-col gap-[1rem] md:justify-start md:items-start justify-center items-center">
           <h1 className="text-[1.25rem] font-semibold text-[white]">Address</h1>
