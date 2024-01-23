@@ -25,15 +25,15 @@ const EventCard = ({
         <img src={image} className=" rounded-lg  object-contain  top-0 absolute -z-10" alt="" />
         <div className="flex flex-col justify-center items-center rounded-lg bg-black border-xl bg-opacity-50 p-2">
 
-        <h5 class="mb-1  text-2xl font-bold tracking-tight text-center text-gray-900 dark:text-white">
+        <h5 className="mb-1  text-2xl font-bold tracking-tight text-center text-gray-900 dark:text-white">
           {name}
         </h5>
         {/* <h5 class="mb-2  text-2xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-tr from-orange-600 to-pink-600"> */}
       
-        <p class="font-sans w-[90%] text-center text-gray-200 ">
+        <p className="font-sans w-[90%] text-center text-gray-200 ">
          {description.slice(0,140)+"..."}
         </p>
-        <h5 class="m-2 text-2xl tracking-tight ">
+        <h5 className="m-2 text-2xl tracking-tight ">
           {club}
         </h5>
         </div>
