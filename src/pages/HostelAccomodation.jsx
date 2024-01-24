@@ -10,14 +10,14 @@ const HostelAccomodation = () => {
         "Room allotment will be done on a first come first serve basis as there are only a few rooms available.",
         "After registering for their stay in the campus, they will be provided with a registration slip which they need to submit on visiting the campus to get their visiting ID-cards in return.",
         "Accommodation will be provided with one iron cot, mattress and one cupboard based on the availability.",
-        "Registration will begin from 24nd january 2024 and the registration portal will be closed when all the rooms are filled.",
+        "Registration will begin from 24th january 2024 and the registration portal will be closed when all the rooms are filled.",
         "Visitors should carry their college ID Card and any government ID Card (like Aadhaar card, driving license, PAN Card, etc.) – original and photocopy & 2 passport size photographs.        ",
         "Registered students have to directly report to the hostel office for fee payment and further procedures.(The Hostel office is located at the Ground floor of Central vista).",
         "The registration fee for staying in the campus is ₹. 330 per day including food and lodging and the payment can be done through cash/UPI.",        
         "Visitors are responsible for their own valuables & bring their own lock & keys. ",
         "Visitors are not allowed to carry any electrical gadgets like iron box, electric kettle, immersion rod, etc.",
         "The room will be on a sharing basis.",
-        "No visitors will be allowed to stay after 10:00 AM on 26th February, 2023.",
+        "No visitors will be allowed to stay after 10:00 AM on 4th February, 2024.",
         "All the guests have to strictly adhere to the institute rules, regulations and guidelines.",
     ]
 
