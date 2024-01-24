@@ -141,8 +141,11 @@ const Home = () => {
         {/* <div className="opacity-60 bg-blue_bubbles w-[20rem] h-[20rem] absolute -right-[4rem] bottom-0 sm:w-[30rem] sm:h-[30rem] bg-contain   bg-no-repeat -z-10"></div>
         <div className="opacity-60 bg-pastle w-[20rem] h-[20rem] sm:w-[30rem] sm:h-[30rem] absolute -left-[8rem] top-5 sm:-left-[12rem] sm:-top-10 bg-contain   bg-no-repeat -z-20"></div> */}
         <div className="h-[90%] flex flex-wrap justify-center items-center md:grid grid-cols-3 justify-items-center w-full">
-          {sponsors.map((sponsor,index) => (
-            <div className="flex justify-center flex-col items-center m-5 gap-5" key={index}>
+          {sponsors.map((sponsor, index) => (
+            <div
+              className="flex justify-center flex-col items-center m-5 gap-5"
+              key={index}
+            >
               <img
                 src={sponsor.images}
                 className="w-auto h-[4rem] sm:h-[5rem] md:h-[6rem]"
