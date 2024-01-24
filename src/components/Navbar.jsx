@@ -21,8 +21,8 @@ const Navbar = () => {
         <div className="container mx-auto flex justify-between  items-center">
           <div className="flex items-center">
             <div className="flex justify-start items-center gap-1">
-            <img src={nitlogo} alt="NIT ANP Logo" className="w-[90px] border-r-white p-2 border-r-[0.2rem]" />
-            <img src={logo} alt="Techkriya Logo" className="w-[100px]" />
+            <img src={nitlogo} alt="NIT ANP Logo" className="w-[60px] md:w-[90px] border-r-white p-2 border-r-[0.2rem]" />
+            <img src={logo} alt="Techkriya Logo" className="w-[70px] md:w-[100px]" />
 
             </div>
             <div className="ml-4">
