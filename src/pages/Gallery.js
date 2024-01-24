@@ -11,7 +11,7 @@ const Gallery = () => {
             <a href="rk" className="font-bold text-lg md:text-2xl font-serif">HOME</a>
             <a href="ke" className="font-bold text-lg md:text-2xl font-serif">REGISTER</a>
           </div> */}
-        <div className="flex justify-around pe-5 mt-[5rem] md:pe-0">
+        <div className="flex justify-around pe-5 mt-[6rem] md:pe-0">
           <h1 className="font-bold text-xl md:text-3xl font-cdb ">GALLERY</h1>
         </div>
       </div>

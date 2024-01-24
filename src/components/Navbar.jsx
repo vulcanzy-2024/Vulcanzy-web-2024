@@ -3,10 +3,10 @@ import { NavLink } from "react-router-dom";
 import { IoMenu } from "react-icons/io5";
 import { GiCrossMark } from "react-icons/gi";
 import logo from "../assets/logo.png";
-
+import nitlogo from "../assets/images/home/NITAP_LOGO.png"
 const Navbar = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-  const link="https://drive.google.com/file/d/1lOn0HohR-UrVrHURFUnclhwrxr8Z-lmL/view?usp=sharing"
+  const link="https://drive.google.com/file/d/1YIQnl1ryCrP8L3bZ9jTaTqKRBkmLwYER/view?usp=sharing"
   const toggleDrawer = () => {
     setIsDrawerOpen(!isDrawerOpen);
   };
@@ -18,9 +18,13 @@ const Navbar = () => {
   return (
     <>
       <nav className="bg-opacity-20 backdrop-filter backdrop-blur-sm border-b-2 z-10 border-white p-4 fixed w-full ">
-        <div className="container mx-auto flex justify-between items-center">
+        <div className="container mx-auto flex justify-between  items-center">
           <div className="flex items-center">
+            <div className="flex justify-start items-center gap-1">
+            <img src={nitlogo} alt="NIT ANP Logo" className="w-[90px] border-r-white p-2 border-r-[0.2rem]" />
             <img src={logo} alt="Techkriya Logo" className="w-[100px]" />
+
+            </div>
             <div className="ml-4">
               <NavLink to="/" className="text-white font-bold text-lg">
                 VULCANZY’24
@@ -31,7 +35,7 @@ const Navbar = () => {
             </div>
           </div>
 
-          <div className="hidden  md:flex items-center space-x-4">
+          <div className="hidden ran:flex items-center space-x-4">
             <NavLink to="/events" className="text-white">
               Events
             </NavLink>
@@ -50,7 +54,7 @@ const Navbar = () => {
             </a>
           </div>
 
-          <div className="md:hidden">
+          <div className="ran:hidden">
             <button onClick={toggleDrawer} className="text-white">
               <IoMenu className="text-2xl" />
             </button>
