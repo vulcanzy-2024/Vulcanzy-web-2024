@@ -6,7 +6,7 @@ module.exports = {
       screens: {
         lg: "1060px",
         md: "815px",
-        ran: "828px",
+        ran: "853px",
       },
       keyframes: {
         slide: {
