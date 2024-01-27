@@ -6,11 +6,9 @@ import bgvideo from "../assets/video/Vulcanzy.mp4";
 import des1 from "../assets/images/home/sunwaves.svg";
 import clock from "../assets/images/home/Clock.svg";
 import Timer from "../components/Timer";
-import sponsors from "../Constants/sponsors";
-// import bubble from "../assets/images/home/Purple drop.svg";
-// import Nit_Logo from "../images/home/NITAP_LOGO.png";
 import wave from "../assets/images/wave.png";
 import { Link } from "react-router-dom";
+import SponsorsC from "../components/SponsorsC";
 const Home = () => {
   const { ref: slide, inView } = useInView();
   const { ref: design, inView: inView2 } = useInView();
@@ -27,16 +25,6 @@ const Home = () => {
   return (
     <>
       <div className=" flex am:justify-around items-center flex-col sm:flex-row h-[100dvh] w-[100%] overflow-clip relative">
-        {/* <div className="absolute top-4 left-10 flex text-white gap-5 justify-center items-center">
-          <img
-            src={Nit_Logo}
-            alt=""
-            className="w-[3rem]  md:w-[5rem] sm:w-[4rem]"
-          />
-          <p className="text-left  font-cdb text-[1rem] sm:text-[1.2rem] md:text-[1.5rem]">
-            National Institite of Technology <br /> Andhra pradesh
-          </p>
-        </div> */}
         <div className="absolute w-full -z-10">
           <div className="w-full h-[100dvh] bg-[#808080]/50  absolute"></div>
           <video
@@ -115,34 +103,10 @@ const Home = () => {
 
       <div className="bg-black -z-50 sca">
         <div className="w-full max-h-max  bg-black flex justify-center flex-col items-center relative overflow-clip -z-30">
-          <p className="text-white font-cdr  text-3xl">Our Sponsors</p>
-          {/* <div className="opacity-60 bg-blue_bubbles w-[20rem] h-[20rem] absolute -right-[4rem] bottom-0 sm:w-[30rem] sm:h-[30rem] bg-contain   bg-no-repeat -z-10"></div>
-        <div className="opacity-60 bg-pastle w-[20rem] h-[20rem] sm:w-[30rem] sm:h-[30rem] absolute -left-[8rem] top-5 sm:-left-[12rem] sm:-top-10 bg-contain   bg-no-repeat -z-20"></div> */}
-          <div className="h-[90%] flex flex-wrap justify-center items-center md:grid grid-cols-3 justify-items-center w-full">
-            {sponsors.map((sponsor) => (
-              <div className="flex justify-center flex-col items-center m-5 gap-5">
-                {sponsor.imp ? (
-                  <img
-                    src={sponsor.images}
-                    className="w-auto h-[7rem] sm:h-[8rem] md:h-[9rem]"
-                    alt=""
-                  />
-                ) : (
-                  <img
-                    src={sponsor.images}
-                    className="w-auto h-[4rem] sm:h-[5rem] md:h-[5rem]"
-                    alt=""
-                  />
-                )}
-                {/* <img src={sponsor.images} className="w-auto h-[6rem]" alt="" /> */}
-                <p className="text-white font-cdr text-center text-2xl">
-                  {sponsor.title}{" "}
-                </p>
-              </div>
-            ))}
-          </div>
+         <SponsorsC/>
         </div>
       </div>
+
       <div className="bg-black flex justify-center relative h-[10rem] w-full items-center ">
         <a
           href="https://forms.gle/ioxrYNX1bx1nrogp7"
