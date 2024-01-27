@@ -16,7 +16,7 @@ const SponsorsC = () => {
             ) : (
               <img
                 src={sponsor.images}
-                className="w-auto h-[4rem] sm:h-[5rem] md:h-[5rem]"
+                className="w-auto h-[4rem] sm:h-[5rem] md:h-[6rem]"
                 alt=""
               />
             )}
@@ -26,31 +26,30 @@ const SponsorsC = () => {
           </div>
         ))}
       </div>
-      <div>
-        <p className="text-white font-cdr text-3xl">Other Sponsors</p>
+          <p className="text-white font-cdr text-3xl">Other Sponsors</p>
+        <div className="flex flex-wrap justify-center items-center">
 
-        {otherS.map((sponsor) => (
-          <div className="flex justify-center flex-col items-center m-5 gap-5">
-            {sponsor.imp ? (
-              <img
-                src={sponsor.images}
-                className="w-auto h-[7rem] sm:h-[8rem] md:h-[9rem]"
-                alt=""
-              />
-            ) : (
-              <img
-                src={sponsor.images}
-                className="w-auto h-[4rem] sm:h-[5rem] md:h-[5rem]"
-                alt=""
-              />
-            )}
-            {/* <img src={sponsor.images} className="w-auto h-[6rem]" alt="" /> */}
-            <p className="text-white font-cdr text-center text-2xl">
-              {sponsor.title}{" "}
-            </p>
-          </div>
-        ))}
-      </div>
+          {otherS.map((sponsor) => (
+            <div className="flex  m-5 gap-6">
+              {sponsor.imp ? (
+                <img
+                  src={sponsor.images}
+                  className="w-auto h-[7rem] sm:h-[8rem] md:h-[9rem]"
+                  alt=""
+                />
+              ) : (
+                <img
+                  src={sponsor.images}
+                  className="w-auto h-[4rem] sm:h-[5rem] md:h-[5rem]"
+                  alt=""
+                />
+              )}
+              <p className="text-white font-cdr text-center text-2xl">
+                {sponsor.title}{" "}
+              </p>
+            </div>
+          ))}
+        </div>
     </div>
   );
 };

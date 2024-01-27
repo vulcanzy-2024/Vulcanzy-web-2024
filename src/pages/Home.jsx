@@ -101,10 +101,9 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="bg-black -z-50 sca">
-        <div className="w-full max-h-max  bg-black flex justify-center flex-col items-center relative overflow-clip -z-30">
+      <div className="bg-black ">
          <SponsorsC/>
-        </div>
+        
       </div>
 
       <div className="bg-black flex justify-center relative h-[10rem] w-full items-center ">
