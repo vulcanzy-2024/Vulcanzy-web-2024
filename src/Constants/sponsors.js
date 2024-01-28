@@ -14,6 +14,7 @@ const sponsors = [
     title: "Title Sponsor",
   },
   {
+    imp:1,
     images: b,
     title: "Co-Sponsor",
   },

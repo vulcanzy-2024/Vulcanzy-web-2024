@@ -4,13 +4,13 @@ const SponsorsC = () => {
   return (
     <div className="flex justify-center flex-col items-center  gap-14">
       <p className="text-white font-cdr  text-3xl">Our Sponsors</p>
-      <div className="h-[90%] flex flex-wrap justify-center items-center md:grid grid-cols-3 justify-items-center w-full">
+      <div className="h-[90%] flex flex-wrap justify-center items-center md:grid grid-cols-3 justify-items-center  w-full">
         {sponsors.map((sponsor) => (
-          <div className="flex justify-center flex-col items-center m-5 gap-5">
+          <div className="flex  flex-col items-center  m-5 gap-5">
             {sponsor.imp ? (
               <img
                 src={sponsor.images}
-                className="w-auto h-[7rem] sm:h-[8rem] md:h-[9rem]"
+                className="w-auto scale-[2] h-[4rem] sm:h-[5rem] md:h-[6rem]"
                 alt=""
               />
             ) : (
