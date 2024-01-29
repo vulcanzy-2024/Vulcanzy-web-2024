@@ -29,6 +29,8 @@ import prayatnam2 from "../assets/images/events/lip sync.png";
 import shres from "../assets/images/events/Event01.jpg";
 import shres1 from "../assets/images/events/Event02.jpg";
 import shres2 from "../assets/images/events/Event03.jpg";
+import safari from "../assets/images/events/NVEC_Safari Paths .png"
+import air from "../assets/images/events/20's IN 90's (1).png"
 const events = [
   {
     name: "Music Mania",
@@ -59,31 +61,11 @@ const events = [
     link: "",
   },
   {
-    name: "Arcade Corner",
+    image:air,
+    name: "20s in 90s",
     club: "Air Club",
     description:
-      "Step back in time and relive the golden era of gaming at our Event Arcade Corner! Immerse yourself in nostalgia as we bring vintage games to life on PC screens, powered by the mighty Raspberry Pi 4.",
-    link: "",
-  },
-  {
-    name: "Target Game",
-    club: "Air Club",
-    description:
-      "Lock and load for an adrenaline-packed adventure! Join us for Target Games, where precision meets excitement. Test your sharpshooting skills with toy guns and hit the bullseye.",
-    link: "",
-  },
-  {
-    name: "Beyblade",
-    club: "Air Club",
-    description:
-      "Gear up for a whirlwind of excitement at our Beyblade Event! Spin, battle, and dominate the arena as competitors go head-to-head in a clash of spinning tops. It's a showdown like no other!",
-    link: "",
-  },
-  {
-    name: "Buzzer Maze",
-    club: "Air Club",
-    description:
-      "Navigate the twists and turns of our electrifying Buzzer Maze! Challenge your wits and coordination as you make your way through the maze, but watch out for the buzzers! Can you conquer the maze and reach the end without a buzz?",
+    "Embark on a nostalgic journey as we step back into the vibrant era of the 90s. \"20s in 90s\" is a multi-tasking challenge that blends the precision of wired obstacles with the thrill of pixelated competition. This event invites participants to relive the energy and excitement of the 90s, combining skill, strategy, and a dash of vintage fun. Can you conquer the tasks and emerge as the ultimate champion in this 90s-inspired adventure?",
     link: "",
   },
   {
@@ -201,6 +183,7 @@ const events = [
       "The participants will need to pass multiple rounds of various questions whose answers are in percentages of people accepting or rejecting the opinion given with a predetermined answer based on a survey conducted prior to the event. Participants will be awarded scores based on how close their guess is to the actual percentage and a winner will be decided at the end of each game based on their scores",
   },
   {
+    image:safari,
     name: "Safari Paths",
     club: "Nve",
     description:
@@ -210,9 +193,13 @@ const events = [
     image: pe1,
     name: "Box Cricket",
     club: "Pe",
-    description:
-      "'Box cricket' typically refers to a simplified version of traditional cricket that can be played in a, confined space. The rules and setup may vary.",
-  },
+    description:{
+      first:"\"Box cricket\" typically refers to a simplified version of traditional cricket that can be played in a, confined space. The rules and setup may vary.",
+      equipment:"Like a tennis ball and bats will be provided",
+      teams:"The team size could be min 2- max5",
+      rules: "Rules are often adapted to suit the confined space. For example, there might be limitations on where the ball can be hit, or specific areas designated as boundaries and dismissal if hit in those areas."
+    }
+    },
   {
     image: pe,
     name: "Cube Craze",
