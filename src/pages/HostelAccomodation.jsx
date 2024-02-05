@@ -19,6 +19,7 @@ const HostelAccomodation = () => {
         "The room will be on a sharing basis.",
         "No visitors will be allowed to stay after 10:00 AM on 4th February, 2024.",
         "All the guests have to strictly adhere to the institute rules, regulations and guidelines.",
+        "Those who successfully got accommodation are allowed to stay in the event after 17:00, and those who failed to get the accommodation are permitted to stay in the fest only till 17:00"
     ]
 
   return (
