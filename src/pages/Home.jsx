@@ -2,12 +2,12 @@ import logo from "../assets/images/home/VULCANZY_BLACK.png";
 import { useInView } from "react-intersection-observer";
 import React from "react";
 import { useEffect } from "react";
-import bgvideo from "../assets/video/Vulcanzy.mp4";
 import des1 from "../assets/images/home/sunwaves.svg";
 import clock from "../assets/images/home/Clock.svg";
 import Timer from "../components/Timer";
 import wave from "../assets/images/wave.png";
 import { Link } from "react-router-dom";
+import bg from "../assets/video/bg.jpeg";
 import SponsorsC from "../components/SponsorsC";
 const Home = () => {
   const { ref: slide, inView } = useInView();
@@ -26,13 +26,14 @@ const Home = () => {
     <>
       <div className=" flex am:justify-around items-center flex-col sm:flex-row h-[100dvh] w-[100%] overflow-clip relative">
         <div className="absolute w-full -z-10">
-          <div className="w-full h-[100dvh] bg-[#808080]/50  absolute"></div>
-          <video
+          <div className="w-full h-[100dvh] bg-[#808080]/20  absolute"></div>
+          {/* <video
             src={bgvideo}
             autoPlay
             loop
             className="w-[100%]  h-[100dvh] object-cover"
-          ></video>
+          ></video> */}
+          <img src={bg} alt="" className="w-[100%]  h-[100dvh] object-cover"/>
         </div>
         <div className="w-[80%] mt-10 sm:mt-0 sm:w-[50%] ">
           <img src={logo} className="opacity-60" alt="" />
